@@ -16,6 +16,7 @@ window.addEventListener("load", function () {
   var playB=document.getElementById("play");
   playB.addEventListener("click", function () {
     video.play();
+    document.getElementById("volume").innerHTML = (video.volume * 100) + "%";
     //console.log("Video Played");
   });
   
@@ -85,7 +86,7 @@ skipB.addEventListener("click", function () {
   });
 
   // orignal function
-  var orignalB=document.getElementById("orig");
+  var originalB=document.getElementById("orig");
   originalB.addEventListener("click", function () {
     video.classList.remove("oldSchool");
   });
